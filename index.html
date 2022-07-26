@@ -68,32 +68,18 @@
 						</header>
 						<div class="content">
 
-							<pre><code>
-								for step in range(duration):
-								    shuffle(list_id)# to pick agents in a random order
-								    for name in list_id:
-									walker = agents_dic[name]
-									agents_per_node[walker.pos] -= 1
-									walker.move()
-									agents_per_node[walker.pos] += 1
-								    single = agents_per_node.count(1) 
-								    empty = agents_per_node.count(0) 
-								    loners[step] = single / n_agents *100
-								    aggregates[step] = graph_size - empty - single
-								    print(f"Step {step} out of {duration}. Simulation {counter} out of {simulations_nb}, after {round(ongoing_time - start)} seconds.", end='\r') 
-								counter += 1
-							
-							
-								i = 0;
-
-								while (!deck.isInOrder()) {
-								print 'Iteration ' + i;
-								deck.shuffle();
-								i++;
-								}
-
-								print 'It took ' + i + ' iterations to sort the deck.';
-							</code></pre>
+							<pre><code>for step in range(duration):
+shuffle(list_id)
+for name in list_id:
+	walker = agents_dic[name]
+	agents_per_node[walker.pos] -= 1
+	walker.move()
+	agents_per_node[walker.pos] += 1
+single = agents_per_node.count(1) 
+empty = agents_per_node.count(0) 
+loners[step] = single / n_agents *100
+aggregates[step] = graph_size - empty - single
+</code></pre>
 
 						</div>
 					</section>
