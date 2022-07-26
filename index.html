@@ -60,20 +60,45 @@
 					</section>
 
 				<!-- Four -->
-				<!--
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+				
+				<!-- Code -->
+					<section>
+						<header>
+							<h3>Code</h3>
+						</header>
 						<div class="content">
-							<h2>Pharetra etiam nulla</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
+
+							<pre><code>
+								for step in range(duration):
+								    shuffle(list_id)# to pick agents in a random order
+								    for name in list_id:
+									walker = agents_dic[name]
+									agents_per_node[walker.pos] -= 1
+									walker.move()
+									agents_per_node[walker.pos] += 1
+								    single = agents_per_node.count(1) 
+								    empty = agents_per_node.count(0) 
+								    loners[step] = single / n_agents *100
+								    aggregates[step] = graph_size - empty - single
+								    print(f"Step {step} out of {duration}. Simulation {counter} out of {simulations_nb}, after {round(ongoing_time - start)} seconds.", end='\r') 
+								counter += 1
+							
+							
+								i = 0;
+
+								while (!deck.isInOrder()) {
+								print 'Iteration ' + i;
+								deck.shuffle();
+								i++;
+								}
+
+								print 'It took ' + i + ' iterations to sort the deck.';
+							</code></pre>
+
 						</div>
 					</section>
-				-->
+				
+				
 				<!-- Five -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
@@ -132,91 +157,6 @@
 										</ul>
 									</div>
 								</article>
-								<!--
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>   -->
 							</div>
 
 					</section>
